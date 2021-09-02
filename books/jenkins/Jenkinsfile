@@ -127,6 +127,7 @@ pipeline {
 return(it.object().status.phase == "Running")
             }
         }
+    }
 
         stage('Wait for deployment in Staging') {
             steps {
