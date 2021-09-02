@@ -128,7 +128,7 @@ return(it.object().status.phase == "Running")
             }
         }
     }
-
+} 
         stage('Wait for deployment in Staging') {
             steps {
                 sh "oc get route ${APP_NAME} -n ${STAGE_PROJECT} -o jsonpath='{ .spec.host }' --loglevel=4 > routehost"
