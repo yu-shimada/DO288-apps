@@ -110,7 +110,7 @@ pipeline {
                      openshift.tag("${DEV_PROJECT}/books:latest","${STAGE_PROJECT}/books:stage")
             }
         }
-
+     }
         stage('Deploy to Staging Env') {
             steps {
                 echo '### Cleaning existing resources in Staging ###'
